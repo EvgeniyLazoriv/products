@@ -1,0 +1,8 @@
+// Add category after title
+
+function nes_coocommerce_category(){
+	global $product;
+
+	echo $product->get_categories();
+}
+add_action( 'woocommerce_before_shop_loop_item_title', 'nes_coocommerce_category', 15 );
